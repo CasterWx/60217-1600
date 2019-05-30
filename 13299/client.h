@@ -25,7 +25,7 @@ int commandGet( int sockCodeNum, char *s);
 int commandPut( int sockCodeNum, char *s);
 int commandRenamefile( int sockCodeNum, char *s, char *d );
 int commandDeletefile( int sockCodeNum, char *s );
-
+int ftp_pwd(int sockCodeNum) ;
 
  
 int myTermios()

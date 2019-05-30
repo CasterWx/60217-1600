@@ -56,7 +56,9 @@ main(int argc,char **argv){
 		}else if(strcmp(insertCommand,"get")==0){
 			scanf("%s",insertCommand);
 			commandGet(csock,insertCommand);
-		}else if(strcmp(insertCommand,"put")==0){
+		}else if(strcmp(insertCommand,"pwd")==0){
+                         int a = ftp_pwd(csock) ;
+                }else if(strcmp(insertCommand,"put")==0){
 			scanf("%s",insertCommand);
 			commandPut(csock,insertCommand);
 		}else if(strcmp(insertCommand,"del")==0){
